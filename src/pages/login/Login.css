@@ -1,0 +1,34 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 86vh;
+  background-color: rgb(193, 187, 187);
+}
+.loginInputs {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  color: rgb(128, 161, 144);
+}
+.loginInputs input {
+  width: 200px;
+  padding: 15px 0px 15px 5px;
+  margin-bottom: 20px;
+  border: 2px solid rgb(128, 161, 144);
+  border-radius: 5px;
+}
+.loginButtons button {
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid rgb(128, 161, 144);
+  color: white;
+  background-color: rgb(128, 161, 144);
+  width: 80px;
+}
+.loginInputs h2 {
+  margin-bottom: 30px;
+}

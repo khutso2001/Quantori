@@ -1,0 +1,20 @@
+.aboutUser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 86vh;
+  background-color: rgb(193, 187, 187);
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  color: rgb(128, 161, 144);
+}
+.user p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}

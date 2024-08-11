@@ -1,0 +1,7 @@
+.footer {
+  color: white;
+  background-color: rgb(23, 23, 66);
+  padding: 7px 30px;
+  display: flex;
+  flex-direction: row-reverse;
+}

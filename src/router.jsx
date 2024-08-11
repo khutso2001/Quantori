@@ -1,11 +1,25 @@
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
-import LinkLayout from "./layouts/LinkLayout";
+import Layout from "./layouts/Layout";
 import Contact from "./pages/contact/Contact";
 import Login from "./pages/login/Login";
-const router = [
+import { createBrowserRouter, Navigate } from "react-router-dom";
+import { Fragment, useContext } from "react";
+import { AuthContext } from "./contexts/AuthContext";
+
+const AfterLogin = ({ children }) => {
+  const { token } = useContext(AuthContext);
+
+  if (token) {
+    return <Navigate to="/" />;
+  }
+
+  return <Fragment>{children}</Fragment>;
+};
+
+const router = createBrowserRouter([
   {
-    element: <LinkLayout />,
+    element: <Layout />,
     path: "/",
     children: [
       {
@@ -21,10 +35,15 @@ const router = [
         path: "/contact",
       },
       {
-        element: <Login />,
+        element: (
+          <AfterLogin>
+            <Login />
+          </AfterLogin>
+        ),
         path: "/login",
       },
     ],
   },
-];
+]);
+
 export default router;

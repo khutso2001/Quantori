@@ -1,0 +1,66 @@
+.userIcon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(128, 161, 144);
+  padding: 5px;
+  border-radius: 50px;
+  background-color: rgb(128, 161, 144);
+  color: white;
+  margin-right: 25px;
+}
+.linkLayoutContainer,
+.pagesContainer {
+  display: flex;
+  align-items: center;
+}
+.linkLayoutContainer {
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+}
+.pagesLinks {
+  border: 1px solid rgb(128, 161, 144);
+  border-radius: 50px;
+  display: flex;
+}
+.pagesLinks a {
+  text-decoration: none;
+}
+.pagesLinks a:active,
+.pagesLinks a:focus {
+  background-color: rgb(128, 161, 144);
+  color: white;
+}
+
+.aboutLink {
+  padding: 10px 25px;
+  border-right: 1px solid rgb(128, 161, 144);
+  border-left: 1px solid rgb(128, 161, 144);
+}
+.contactLink {
+  padding: 10px 20px 10px 25px;
+}
+.homeLink {
+  padding: 10px 25px 10px 20px;
+}
+.homeLink:focus,
+.homeLink:hover,
+.homeLink:active {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.contactLink:focus,
+.contactLink:hover,
+.contactLink:active {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.loginContainer button,
+.loginContainer a {
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid rgb(128, 161, 144);
+  color: white;
+  background-color: rgb(128, 161, 144);
+  text-decoration: none;
+  width: 80px;
+}
