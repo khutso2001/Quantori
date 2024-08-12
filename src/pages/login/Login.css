@@ -29,6 +29,10 @@
   background-color: rgb(128, 161, 144);
   width: 80px;
 }
+.loginButtons {
+  display: flex;
+  justify-content: space-around;
+}
 .loginInputs h2 {
   margin-bottom: 30px;
 }

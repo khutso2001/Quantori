@@ -64,3 +64,97 @@
   text-decoration: none;
   width: 80px;
 }
+
+.linkLayoutContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.pagesContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.userIcon {
+  margin-right: 15px;
+}
+
+.homeLink,
+.aboutLink,
+.contactLink {
+  text-decoration: none;
+  color: rgb(128, 161, 144);
+}
+.homeLink:hover,
+.aboutLink:hover,
+.contactLink:hover {
+  background-color: rgb(128, 161, 144);
+  color: white;
+}
+.burgerIcon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.burgerMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow: auto;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  padding-top: 50px;
+}
+
+.burgerMenu.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(0);
+}
+
+.burgerLink {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+.burgerLink:hover {
+  background-color: rgb(128, 161, 144);
+}
+
+.burgerButton {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .burgerIcon {
+    display: block;
+  }
+
+  .pagesLinks {
+    display: none;
+  }
+  .loginContainer a {
+    display: none;
+  }
+}
