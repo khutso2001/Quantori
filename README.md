@@ -1,8 +1,38 @@
-# React + Vite
+# Quantori
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React project bootstrapped with [Vite](https://vitejs.dev/). It uses several dependencies to provide various functionalities, such as icons, HTTP requests, and routing.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow the steps below to run the application locally.
+
+## Prerequisites
+
+Make sure you have Node.js and either Yarn or npm installed on your machine. You can download Node.js from [here](https://nodejs.org/).
+
+## Installation
+
+Navigate to the project's root directory using your terminal.
+
+```bash
+cd /path/to/your/project
+
+
+# Using Yarn
+yarn install
+OR
+
+# Using npm
+npm install
+
+
+# Using Yarn
+yarn run dev
+
+# Using npm
+npm run dev
+```
+
+Access the application:
+
+Open your browser and navigate to http://localhost:5173 to view the application.

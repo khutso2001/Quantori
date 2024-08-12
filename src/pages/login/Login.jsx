@@ -5,7 +5,7 @@ import "./Login.css";
 import axios from "axios";
 
 export default function Login() {
-  const { login } = useContext(AuthContext);
+  const { login, setUser } = useContext(AuthContext);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -24,12 +24,19 @@ export default function Login() {
       });
 
       login(response.data.token, response.data.refreshToken);
-      navigate("/");
+
+      const data = await axios.get("https://dummyjson.com/auth/me", {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${response.data.token}`,
+        },
+      });
+      setUser(data.data);
+      navigate("/about");
     } catch (error) {
       console.error("Login failed:", error);
     }
   };
-
   return (
     <div className="login">
       <div className="loginInputs">

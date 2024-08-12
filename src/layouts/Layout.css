@@ -64,7 +64,12 @@
   text-decoration: none;
   width: 80px;
 }
-
+.loginContainer button:hover,
+.loginContainer a:hover,
+.loginButtons button:hover {
+  background-color: rgb(33, 174, 101);
+  cursor: pointer;
+}
 .linkLayoutContainer {
   display: flex;
   justify-content: space-between;
@@ -154,7 +159,8 @@
   .pagesLinks {
     display: none;
   }
-  .loginContainer a {
+  .loginContainer a,
+  .loginContainer button {
     display: none;
   }
 }
