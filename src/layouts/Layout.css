@@ -159,8 +159,14 @@
   .pagesLinks {
     display: none;
   }
-  .loginContainer a,
-  .loginContainer button {
+  .loginContainer a {
     display: none;
+  }
+  .loginContainer {
+    display: flex;
+    align-items: center;
+  }
+  .loginContainer button {
+    margin-right: 10px;
   }
 }
