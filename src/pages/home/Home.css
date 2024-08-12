@@ -1,0 +1,21 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home img {
+  width: 200px;
+  height: 200px;
+}
+.loginInputs {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  color: rgb(128, 161, 144);
+  border: 1px solid rgb(128, 161, 144);
+  width: 25%;
+  margin-bottom: 97px;
+}
